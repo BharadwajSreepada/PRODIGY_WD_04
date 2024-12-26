@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Bharadwaj S.</title>
+  <link href="style.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: rgba(255, 100, 0, 0.7 );
+      color: white;
+      padding: 2rem 1.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    header ul li {
+      margin-right: 20px;
+    }
+    header ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    header ul li a:hover {
+      text-decoration: underline;
+    }
+    .home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10rem 10%;
+      background: linear-gradient(90deg, rgba(255, 179, 128, 0.7) 0%, rgba(248, 202, 171, 0.7) 100%);
+      color: white;
+      min-height: 100vh;
+    }
+    .home-content {
+      max-width: 600px;
+    }
+    .home-content h1 {
+      font-size: 3rem;
+    }
+    .home-content h1 span {
+      color: #f4a261;
+    }
+    .home-image img {
+      border-radius: 50%;
+      width: 280px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    section {
+      padding: 2rem 10%;
+    }
+    h1, h2, h3 {
+      color: rgb(255, 102, 0);
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .box {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .box img {
+      width: 40px;
+      height: 40px;
+    }
+    .recommendations {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .recommendation {
+      border: 3px solid black;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    .form-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .form-container input[type="text"] {
+      width: 80%;
+      max-width: 300px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    .form-container .submit-button {
+      background-color: rgb(255, 102, 0);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .form-container .submit-button:hover {
+      background-color: rgb(255, 85, 0);
+    }
+    .image-container {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .image-container img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#abt">About Me</a></li>
+    <li><a href="#skl">Skills</a></li>
+    <li><a href="#pro">Projects</a></li>
+    <li><a href="#rec">Recommendations</a></li>
+  </ul>
+  <div>
+    <p style="text-align:right; margin-right: 2rem;">bharadwaj@gmail.com | +91-9182736450</p>
+  </div>
+</header>
+<section id="home" class="home">
+  <div class="home-content">
+    <h1>Hi, I'm <span>Bharadwaj Sreepada</span></h1>
+    <h2>Web Developer & Problem Solver</h2>
+    <p>I craft beautiful and functional websites with a focus on clean code, user experience, and interactivity.</p>
+    <a href="#pro" class="submit-button">View My Work</a>
+  </div>
+  <div class="home-image">
+    <img src="D:\GITAM\Portfolio-Project\profile.jpg" alt="Profile Photo">
+  </div>
+</section>
+<section id="abt">
+  <h1>About Me</h1>
+  <p>I am a Web Developer as a beginner, learning HTML, CSS, JavaScript with certifications. I have intermediate knowledge of C, Java, and Python and am eager to gain hands-on experience through internships.</p>
+</section>
+<section id="skl">
+  <h2>Skills</h2>
+  <div class="box-container">
+    <div class="box">
+      <img src="html.png" alt="HTML">
+      <p>HTML</p>
+    </div>
+    <div class="box">
+      <img src="css.png" alt="CSS">
+      <p>CSS</p>
+    </div>
+    <div class="box">
+      <img src="js.png" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+    <div class="box">
+      <img src="c.png" alt="C">
+      <p>C</p>
+    </div>
+    <div class="box">
+      <img src="java.png" alt="Java">
+      <p>Java</p>
+    </div>
+    <div class="box">
+      <img src="python.png" alt="Python">
+      <p>Python</p>
+    </div>
+  </div>
+</section>
+<section id="pro">
+  <h2>Projects</h2>
+  <ol>
+    <li>
+      <h3>QuickShop - E-commerce Webpage</h3>
+      <p>Dynamic shopping platform with real-time search and product management.</p>
+      <a href="https://pd.ac/3NLnk">View Project</a>
+    </li>
+    <li>
+      <h3>Automated Product Management System</h3>
+      <p>Automates product data management with SQLite and Python.</p>
+      <a href="https://pd.ac/2mKvB">View Project</a>
+    </li>
+    <li>
+      <h3>Sapphire - Smart Parking Solution</h3>
+      <p>Optimized rotary parking system for efficient space management.</p>
+      <a href="https://www.canv.com/design/DAFVqfv4bPQ/YGr6nSIwwX-0jb22eIMbgw/edit">View Project</a>
+    </li>
+  </ol>
+</section>
+<section id="rec">
+  <h2>Recommendations</h2>
+  <div class="recommendations">
+    <div class="recommendation">
+      <p>"Bharadwaj's proficiency in web development, coupled with his strong grasp of C, Python, and Java, makes him an invaluable asset to any tech team."</p>
+    </div>
+    <div class="recommendation">
+      <p>"I highly recommend Bharadwaj for any web development projects. His expertise ensures innovative and scalable solutions."</p>
+    </div>
+    <div class="recommendation">
+      <p>"Having collaborated with Bharadwaj, I can confidently say he is a standout developer, delivering elegant and functional solutions."</p>
+    </div>
+  </div>
+</section>
+<section class="form-container">
+  <h3>Leave a Recommendation</h3>
+  <input type="text" id="name" placeholder="Name (optional)">
+  <input type="text" id="msg" placeholder="Message">
+  <button id="btn1" class="submit-button">Submit</button>
+  <p id="output1" style="visibility:hidden;"></p>
+</section>
+<div class="image-container">
+  <a href="#home">
+    <img src="arrow.png" alt="Back to Top">
+  </a>
+</div>
+<script>
+  document.getElementById('btn1').addEventListener('click', function() {
+    const message = document.getElementById('msg').value;
+    const output = document.getElementById('output1');
+    output.textContent = message;
+    output.style.visibility = 'visible';
+    alert('Thanks for leaving a recommendation!');
+  });
+</script>
+</body>
+</html>
